@@ -9,13 +9,13 @@ steps:
 
 
 
-# Step 2
+# Step 1
 #push the previously built image to ythe docker repo created in Step 0
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/microservices/microservices1:latest']
 
 
-# Step 3
+# Step 2
 # Publish the release
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'bash'
