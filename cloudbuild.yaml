@@ -1,10 +1,17 @@
 steps:
 
+
 # Step 0
 #docker build the image from httpd public dockerhub Apache image
 
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/microservices/microservice1', '.' ]
+
+# step 00
+#tag the image
+ - name: 'gcr.io/cloud-builders/docker'
+    args: ['tag', 'node', 'us-central1-docker.pkg.dev/$PROJECT_ID/microservices/microservices1:latest']
+
 
 # Step 1
 #push the previously built image to ythe docker repo created in Step 0
