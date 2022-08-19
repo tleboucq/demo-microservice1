@@ -7,10 +7,6 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/microservices/microservice1', '.' ]
 
-# Step 1
-#tag the image
- - name: 'gcr.io/cloud-builders/docker'
-    args: ['tag', 'node', 'us-central1-docker.pkg.dev/$PROJECT_ID/microservices/microservices1:latest']
 
 
 # Step 2
