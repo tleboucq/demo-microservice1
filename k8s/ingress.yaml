@@ -10,9 +10,9 @@ spec:
       paths:
       - path: /microservice1
         backend:
-          serviceName: service1
+          serviceName: microservice1
           servicePort: 8080
       - path: /microservice2
         backend:
-          serviceName: service2
+          serviceName: microservice2
           servicePort: 8080
