@@ -4,8 +4,8 @@ metadata:
   name: microservice1
 spec:
   ports:
-  - port: 8080
-    targetPort: 8080
+  - port: 80
+    targetPort: 80
   type: NodePort
   selector:
     app: microservice1
