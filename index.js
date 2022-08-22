@@ -3,6 +3,7 @@ const app = express();
 const port = 80;
 
 app.get('/', (req, res) => {
+    console.log("line6");
     console.log(req.url);
     res.send('<h1>microservice1home!</h1>');
 });
