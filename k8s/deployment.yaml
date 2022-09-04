@@ -17,3 +17,9 @@ spec:
         image: my-app-image
         ports:
           - containerPort: 80
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /microservice1
+            port: 80
+            scheme: HTTP
