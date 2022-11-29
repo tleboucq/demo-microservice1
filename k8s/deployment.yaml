@@ -15,13 +15,6 @@ spec:
       containers:
       - name: microservice1
         image: my-app-image
-        resources:
-              requests:
-                cpu: "4000m"
-                memory: "4Gi"
-              limits:
-                memory: "4Gi"
-                cpu: "4000m"
         ports:
           - containerPort: 80
         readinessProbe:
